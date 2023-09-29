@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>PEPIS</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+        <a href="#"><img src="imagens/logo (1).png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Whats' New</a></li>
+            <li><a href="#">NewsLatter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul><!---ul-->
+    </header>
+    <div class="content">
+        <div class="text-box">
+            <h2>That's What <br> <span >I Like</span></h2>
+            <p>Então persiste
+                A mente é fértil, pra sonhar não tem limite
+                E quem diria, nós tá feroz, naquele pique
+                E de primeira vista uns falam que não existe
+                E talvez foi uma miragem ou então cena de filme.</p>
+                <a href="">View Al Products</a>
+        </div>
+        <div class="imgBox">
+            <img src="imagens/pepsi001.png" class="pepis">
+        </div><!--imgBox-->
+    </div><!--content-->
+    <ul class="thumb">
+        <li><img src="imagens/pepsi001.png" onclick="imgslider ('imagens/pepsi001.png');bgcolor('#0062be')"></li>
+        <li><img src="imagens/pepsi002.png" onclick="imgslider ('imagens/pepsi002.png');bgcolor ('#e60c2c')"></li>
+        <li><img src="imagens/pepsi003.png" onclick="imgslider ('imagens/pepsi003.png');bgcolor ('#1e1e1e')" ></li>
+    </ul>
+    <ul class="sri">
+        <a href=""><img src="imagens/facebook (1).png" alt=""></a>
+        <a href=""><img src="imagens/instagram (1).png" alt=""></a>
+        <a href=""><img src="imagens/twitter (1).png" alt=""></a>
+    </ul>
+    </section>
+    <script type="text/javascript">
+       function imgslider(anything) {
+         document.querySelector('.pepis').src = anything;
+       }
+       function bgcolor(color) {
+        const sec= document.querySelector('.sec');
+        sec.style.background = color;
+        
+       }
+    </script>
+    
+</body>
+</html>
